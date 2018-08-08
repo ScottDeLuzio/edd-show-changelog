@@ -1,0 +1,32 @@
+/* style the expandable button */
+[data-expandable] {
+	display: block;
+	width: 100%;
+	text-align: left;
+	background: #293352;
+	border: 0;
+	color: #fff;
+	padding: 0.25em 0.5em;
+	margin-bottom: 0.25em;
+}
+
+/* make sure there is a focus style for keyboard accessibility */
+[data-expandable]:focus {
+	outline: 2px solid #005C9C;
+	outline-offset: 1px;
+}
+
+/* the arrow using pseudo-content and unicode */
+[data-expandable][aria-expanded="false"]::before {
+	content: '\25b8\0020';
+}
+
+/* the arrow for the expanded state using pseudo-content and unicode */
+[data-expandable][aria-expanded="true"]::before {
+	content: '\25bE\0020';
+}
+
+/* pair visual appearance with accessible state  */
+.expandable[aria-hidden="true"] {
+	display: none;
+}
