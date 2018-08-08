@@ -22,6 +22,6 @@ function eddscl_filter_for_changelog( $download_id = false ){
 	}
 	$heading	= apply_filters( 'eddscl_changelog_heading', 'h3' );
 
-	echo '<' . $heading . '><button data-expandable="changelog">' . __( 'Show Changelog', 'eddscl' ) . '</button></' . $heading . '>';
+	echo '<' . $heading . ' class="eddscl_heading"><button data-expandable="changelog">' . __( 'Show Changelog', 'eddscl' ) . '</button></' . $heading . '>';
 	echo '<div id="changelog">' . $changelog . '</div>';
 }
