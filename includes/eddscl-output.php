@@ -8,10 +8,10 @@ function eddscl_filter_for_changelog( $download_id = false ){
 	if ( !$download_id || !defined( 'EDD_SL_VERSION' ) )
 		return;
 
-	/* Version 3.6 of EDD Software Licensing introduces get_changelog()
+	/* Version 3.6 of EDD Software Licensing introduced get_changelog()
 	 * as a better way to access the changelog than get_post_meta().
 	 * When EDD changes from CPT to custom tables, get_post_meta() won't work anymore.
-	 * get_changelog() currently uses get_post_meta(), but will be updated to
+	 * get_changelog() currently uses get_post_meta(), but can be updated to
 	 * retrieve the changelog correctly when EDD is no longer using CPT for downloads.
 	 */
 	if( version_compare( EDD_SL_VERSION, '3.6' ) >= 0 ){
