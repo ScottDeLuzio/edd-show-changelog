@@ -3,7 +3,7 @@
 Plugin Name: EDD Show Changelog
 Description: Shows the changelog at the bottom of the download page
 Author: Scott DeLuzio
-Version: 1.0.0
+Version: 1.1.0
 Author URI: https://scottdeluzio.com/
 */
 // Exit if accessed directly
@@ -17,7 +17,7 @@ if( ! defined( 'EDDSCL_PLUGIN_DIR' ) ) {
 	define( 'EDDSCL_PLUGIN_DIR', dirname( __FILE__ ) );
 }
 if( ! defined( 'EDDSCL_PLUGIN_VERSION' ) ) {
-	define( 'EDDSCL_PLUGIN_VERSION', '1.0.0' );
+	define( 'EDDSCL_PLUGIN_VERSION', '1.1.0' );
 }
 include( EDDSCL_PLUGIN_DIR . '/includes/eddscl-output.php' );
 
